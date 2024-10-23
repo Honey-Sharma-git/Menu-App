@@ -1,0 +1,34 @@
+/* .card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(5, auto);
+  gap: 5px;
+  background-color: pink;
+}
+
+.price {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.time {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+.price {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.Espresso {
+  width: 300px;
+}
+
+.coffee-details{
+    display: grid;
+    place-items: center;
+} */
