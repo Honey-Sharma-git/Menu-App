@@ -37,6 +37,104 @@
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/utility.css" />
     <title>HMV Cafe:Feedback</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 600px;
+        background-color: white;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-group input,
+      .form-group textarea,
+      .form-group select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .form-group textarea {
+        resize: vertical;
+      }
+      .form-group input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+        border: none;
+        font-size: 16px;
+      }
+      .form-group input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <h2>Café Feedback Form</h2>
+      <form action="submit-feedback.php" method="post">
+        <!-- Name -->
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <!-- Visit Date -->
+        <div class="form-group">
+          <label for="visitDate">Date of Visit:</label>
+          <input type="date" id="visitDate" name="visitDate" required />
+        </div>
+        <!-- Rating -->
+        <div class="form-group">
+          <label for="rating">Rate Your Experience:</label>
+          <select id="rating" name="rating" required>
+            <option value="">Choose...</option>
+            <option value="1">1 - Very Poor</option>
+            <option value="2">2 - Poor</option>
+            <option value="3">3 - Average</option>
+            <option value="4">4 - Good</option>
+            <option value="5">5 - Excellent</option>
+          </select>
+        </div>
+        <!-- Feedback -->
+        <div class="form-group">
+          <label for="feedback">Feedback:</label>
+          <textarea
+            id="feedback"
+            name="feedback"
+            rows="4"
+            placeholder="Tell us about your experience..."
+            required
+          ></textarea>
+        </div>
+        <!-- Submit Button -->
+        <div class="form-group">
+          <input type="submit" value="Submit Feedback" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
