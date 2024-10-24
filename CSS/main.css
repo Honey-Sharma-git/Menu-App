@@ -8,16 +8,41 @@
 /* UTILITY CLASSES START HERE */
 .coffeeTitle {
   color: white;
-  background-color: hsl(0, 59%, 41%);
+  background-color: hsl(30, 53%, 50%);
 }
 .coffeeItems {
-  color: white;
-  background-color: hsl(0, 59%, 70%);
+  color: #000;
+  background-color: hsl(30, 53%, 70%);
 }
 .coffeeCard {
   color: black;
-  background-color: beige;
+  background-color: hsl(30, 53%, 90%);
 }
+.sancksTitle {
+  color: white;
+  background-color: hsl(343, 13%, 50%);
+}
+.snacksItems {
+  color: black;
+  background-color: hsl(343, 13%, 70%);
+}
+.snacksCard {
+  color: black;
+  background-color: hsl(343, 13%, 90%);
+}
+.waterTitle {
+  color: white;
+  background-color: hsl(144, 15%, 50%);
+}
+.waterItems {
+  color: #000;
+  background-color: hsl(144, 15%, 70%);
+}
+.waterCard {
+  color: #000;
+  background-color: hsl(144, 15%, 90%);
+}
+
 /* UTILITY CLASSES END HERE */
 hr {
   height: 10px;
@@ -136,6 +161,8 @@ hr {
   background-color: transparent;
   text-align: left;
   cursor: pointer;
+  padding-left: 0.2rem;
+  font-size: 1rem;
 }
 
 /* START */
@@ -165,3 +192,6 @@ details[open] > summary::before {
 }
 /* CODE FOR CHANGING DETAILS SUMMARY ICON */
 /* END */
+details {
+  -webkit-tap-highlight-color: hsl(0, 0%, 40%, 0.5);
+}
