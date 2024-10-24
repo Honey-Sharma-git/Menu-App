@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 /* UTILITY CLASSES START HERE */
 .coffeeTitle {
@@ -19,7 +19,7 @@
   background-color: beige;
 }
 /* UTILITY CLASSES END HERE */
-hr{
+hr {
   height: 10px;
   background-color: black;
 }
@@ -28,15 +28,19 @@ hr{
   display: grid;
   background-color: aqua;
   place-self: center;
+  place-items: center;
   row-gap: 10px;
   /* Need to check its utility */
 }
 .food-details summary {
-  width: 70%;
+  width: 80%;
   text-align: center;
   place-self: center;
   /* background-color: hsl(0, 59%, 41%); APPLY CLASS INSTEAD*/
   padding: 2rem;
+}
+.food-item {
+  width: 80%;
 }
 .food-item summary {
   width: 100%;
@@ -49,7 +53,7 @@ hr{
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(5, auto);
-  gap: 5px;
+  gap: 10px;
   /* background-color: pink; APPLY CLASS INSTEAD */
 }
 .time {
@@ -61,6 +65,7 @@ hr{
   grid-column-end: 2;
 }
 .orderSize {
+  /* width: max-content; */
   grid-column-start: 1;
   grid-column-end: 2;
 }
@@ -70,9 +75,18 @@ hr{
   grid-row-start: 4;
   grid-row-end: 6;
 }
-.img {
+.fig {
+  width: max-content;
+  place-self: center right;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 6;
+}
+
+.fig img {
+  place-self: center right;
+  display: block;
+  height: 150px;
+  width: 150px;
 }
