@@ -48,6 +48,8 @@ hr {
 }
 .card {
   padding: 1rem;
+  border: 3px dashed gray;
+  border-radius: 38px 38px 0px 0px;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(5, 1fr);
@@ -104,6 +106,7 @@ hr {
   display: block;
   height: 150px;
   width: 150px;
+  border-radius: 10%;
 }
 .add button {
   height: 100%;
