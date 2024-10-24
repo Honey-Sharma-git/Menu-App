@@ -44,11 +44,30 @@
 }
 
 /* UTILITY CLASSES END HERE */
-hr {
-  height: 10px;
-  background-color: black;
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  position: relative;
+}
+.menu-header h1 {
+  position: absolute;
+  left: -1000000px;
+}
+.menu-header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.menu-backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
 }
 .food-details {
+  background-color: white;
   width: 100%;
   display: grid;
   place-self: center;
@@ -75,7 +94,7 @@ hr {
 }
 .card {
   padding: 1rem;
-  border: 3px dashed gray;
+  border: 7px dashed gray;
   /* border-radius: 38px 38px 0px 0px; */
   display: grid;
   grid-template-columns: repeat(2, auto);
