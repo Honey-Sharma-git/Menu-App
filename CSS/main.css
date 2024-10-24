@@ -60,6 +60,22 @@ hr {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+.timeQ,
+.price span {
+  font-weight: 600;
+}
+.price,
+.timeQ,
+.orderSize,
+.add, .add button{
+  font-size: 1.2rem;
+  place-self: center left;
+  width: 100%;
+}
+.timeA{
+  font-size: 1.2rem;
+  text-align: right;
+}
 .price {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -71,8 +87,8 @@ hr {
 }
 .add {
   grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 4;
+  grid-column-end: 3;
+  grid-row-start: 5;
   grid-row-end: 6;
 }
 .fig {
@@ -81,7 +97,7 @@ hr {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
-  grid-row-end: 6;
+  grid-row-end: 5;
 }
 
 .fig img {
