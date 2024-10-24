@@ -57,7 +57,7 @@ hr {
   /* Need to check its utility */
 }
 .food-details summary {
-  width: 90%;
+  width: 100%;
   text-align: center;
   place-self: center;
   padding: 2rem;
