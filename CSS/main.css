@@ -8,14 +8,15 @@
 /* UTILITY CLASSES START HERE */
 
 /* UTILITY CLASSES END HERE */
-.coffee-details {
+
+.food-details {
   /* width: 300px; */
   display: grid;
   place-items: center;
   background-color: aqua;
   place-self: center;
 }
-.Espresso {
+.food-item {
   /* width: 300px; */
 }
 .card {
