@@ -3,28 +3,54 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 /* UTILITY CLASSES START HERE */
-
+.coffeeTitle {
+  color: white;
+  background-color: hsl(0, 59%, 41%);
+}
+.coffeeItems {
+  color: white;
+  background-color: hsl(0, 59%, 70%);
+}
+.coffeeCard {
+  color: black;
+  background-color: beige;
+}
 /* UTILITY CLASSES END HERE */
-
+hr{
+  height: 10px;
+  background-color: black;
+}
 .food-details {
-  /* width: 300px; */
+  width: 100%;
   display: grid;
-  place-items: center;
   background-color: aqua;
   place-self: center;
+  row-gap: 10px;
+  /* Need to check its utility */
 }
-.food-item {
-  /* width: 300px; */
+.food-details summary {
+  width: 70%;
+  text-align: center;
+  place-self: center;
+  /* background-color: hsl(0, 59%, 41%); APPLY CLASS INSTEAD*/
+  padding: 2rem;
+}
+.food-item summary {
+  width: 100%;
+  /* background-color: hsl(0, 59%, 70%); APPLY CLASS INSTEAD*/
+  text-align: left;
+  padding: 1rem;
 }
 .card {
+  padding: 1rem;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(5, auto);
   gap: 5px;
-  background-color: pink;
+  /* background-color: pink; APPLY CLASS INSTEAD */
 }
 .time {
   grid-column-start: 1;
