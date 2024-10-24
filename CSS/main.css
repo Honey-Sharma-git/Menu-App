@@ -44,6 +44,66 @@
 }
 
 /* UTILITY CLASSES END HERE */
+/* ////////////////////////HOMEPAGE STYLE STARTS////////////////////////*/
+.home-body {
+  display: grid;
+  /* place-content: center; */
+  place-items: center;
+  position: relative;
+}
+.home-header {
+  width: 100%;
+}
+.home-header h1 {
+  /* width: 100%; */
+  text-align: center;
+  position: absolute;
+  left: -100000px;
+}
+.home-header img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  place-self: center;
+}
+.home-main {
+  width: 100%;
+}
+.home-main .feedback,
+.home-main .menu {
+  place-self: center;
+  width: 80%;
+  height: 100%;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 40px;
+}
+.home-main .feedback {
+  color: #000;
+  background-color: hsl(0, 0%, 80%);
+}
+.home-main .menu {
+  background-color: pink;
+  color: #000;
+}
+.home-main a,
+.home-main a:visited {
+  color: white;
+  text-decoration: none;
+}
+.home-footer {
+  place-items: center;
+  width: 100%;
+}
+.home-footer .home-nav {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 10px;
+}
+/* ////////////////////////HOMEPAGE STYLE ENDS//////////////////////// */
+
+/* ////////////////////////MENU PAGE STYLE STARTS//////////////////////// */
 html {
   scroll-behavior: smooth;
 }
@@ -214,3 +274,4 @@ details[open] > summary::before {
 details {
   -webkit-tap-highlight-color: hsl(0, 0%, 40%, 0.5);
 }
+/* ////////////////////////MENU PAGE STYLE ENDS//////////////////////// */
