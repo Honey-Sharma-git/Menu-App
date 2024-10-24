@@ -134,6 +134,34 @@ hr {
   border: 2px dashed gray;
   border-radius: 10px;
   background-color: transparent;
-  text-align: center;
+  text-align: left;
   cursor: pointer;
 }
+
+/* START */
+/* CODE FOR CHANGING DETAILS SUMMARY ICON */
+summary {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+summary::before {
+  content: "";
+  background-image: url("../Images/Icons/plus-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  /* background-position: center; */
+  margin-right: 8px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+details[open] > summary::before {
+  background-image: url("../Images/Icons/cross-icon.png");
+}
+/* CODE FOR CHANGING DETAILS SUMMARY ICON */
+/* END */
