@@ -87,8 +87,7 @@
   background-color: pink;
   color: #000;
 }
-.home-main a,
-.home-main a:visited {
+.home-main a:any-link{
   color: white;
   text-decoration: none;
 }
