@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
-  background-color: hsla(0, 100%, 50%, 0.1);
+  /* outline: 1px solid red;
+  background-color: hsla(0, 100%, 50%, 0.1); */
 }
 img {
   display: block;
@@ -110,14 +110,14 @@ body {
   min-height: 100vh;
   position: relative;
 }
-.menu-header h1 {
-  position: absolute;
-  left: -1000000px;
-}
 .menu-header {
   display: flex;
   flex-flow: column;
   align-items: center;
+}
+.menu-header h1 {
+  position: absolute;
+  left: -1000000px;
 }
 .menu-backToTop {
   position: fixed;
@@ -131,7 +131,7 @@ body {
   display: grid;
   place-self: center;
   place-items: center;
-  row-gap: 100px;
+  row-gap: 10px;
   /* Need to check its utility */
 }
 .food-details summary {
@@ -225,11 +225,6 @@ body {
   box-shadow: 0px 2px 5px grey;
   outline-color: transparent;
   cursor: pointer;
-}
-.add button:active,
-.orderSize:active {
-  background-color: hsl(0, 0%, 90%);
-  -webkit-tap-highlight-color: transparent;
 }
 .remarks,
 .orderSize {
