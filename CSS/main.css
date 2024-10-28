@@ -9,43 +9,63 @@
 img {
   display: block;
 }
+/* || VARIABLES */
+:root {
+  --COFFEE-TAB-COLOR: hsl(30, 53%, 50%);
+  --COFFEE-ITEM-COLOR: hsl(30, 53%, 70%);
+  --COFFEE-CARD-COLOR: hsl(30, 53%, 90%);
+
+  --SNACKS-TAB-COLOR: hsl(343, 13%, 50%);
+  --SNACKS-ITEM-COLOR: hsl(343, 13%, 70%);
+  --SNACKS-CARD-COLOR: hsl(343, 13%, 90%);
+
+  --WATER-TAB-COLOR: hsl(144, 15%, 50%);
+  --WATER-ITEM-COLOR: hsl(144, 15%, 70%);
+  --WATER-CARD-COLOR: hsl(144, 15%, 90%);
+
+  --HOME-MENU-BUTTON-COLOR: pink;
+  --HOME-FEEDBACK-BUTTON-COLOR: hsl(0, 0%, 80%);
+  --ADD-BUTTON-COLOR: white;
+
+  --CARD-BORDER-COLOR:gray;
+}
 
 /* UTILITY CLASSES START HERE */
 .coffeeTitle {
   color: white;
-  background-color: hsl(30, 53%, 50%);
+  background-color: var(--COFFEE-TAB-COLOR);
 }
 .coffeeItems {
   color: #000;
-  background-color: hsl(30, 53%, 70%);
+  background-color: var(--COFFEE-ITEM-COLOR);
 }
 .coffeeCard {
   color: black;
-  background-color: hsl(30, 53%, 90%);
+  background-color: var(--COFFEE-CARD-COLOR);
 }
 .snacksTitle {
   color: white;
-  background-color: hsl(343, 13%, 50%);
+  background-color: var(--SNACKS-TAB-COLOR);
 }
 .snacksItems {
   color: black;
-  background-color: hsl(343, 13%, 70%);
+  background-color: var(--SNACKS-ITEM-COLOR);
 }
 .snacksCard {
   color: black;
-  background-color: hsl(343, 13%, 90%);
+  background-color: var(--SNACKS-CARD-COLOR);
 }
 .waterTitle {
   color: white;
-  background-color: hsl(144, 15%, 50%);
+  background-color: var(--WATER-TAB-COLOR);
 }
 .waterItems {
   color: #000;
-  background-color: hsl(144, 15%, 70%);
+  background-color: var(--WATER-ITEM-COLOR);
 }
 .waterCard {
   color: #000;
-  background-color: hsl(144, 15%, 90%);
+  background-color: var(--WATER-CARD-COLOR);
 }
 /* UTILITY CLASSES END HERE */
 
@@ -81,10 +101,10 @@ img {
   text-align: center;
   border-radius: 40px;
   color: #000;
-  background-color: pink;
+  background-color: var(--HOME-MENU-BUTTON-COLOR);
 }
 .home-main .feedback {
-  background-color: hsl(0, 0%, 80%);
+  background-color: var(--HOME-FEEDBACK-BUTTON-COLOR);
 }
 .home-main a:any-link {
   text-decoration: none;
@@ -131,8 +151,6 @@ body {
   display: grid;
   place-self: center;
   place-items: center;
-  row-gap: 10px;
-  /* Need to check its utility */
 }
 .food-details summary {
   width: 100%;
@@ -153,7 +171,7 @@ body {
 }
 .card {
   padding: 1rem;
-  border: 7px dashed gray;
+  border: 7px dashed var(--CARD-BORDER-COLOR);
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(5, 1fr);
@@ -221,7 +239,7 @@ body {
   width: 80%;
   border: none;
   border-radius: 20px;
-  background-color: white;
+  background-color: var(--ADD-BUTTON-COLOR);
   box-shadow: 0px 2px 5px grey;
   outline-color: transparent;
   cursor: pointer;
