@@ -11,6 +11,7 @@ img {
 }
 /* || VARIABLES */
 :root {
+  /* COLORS */
   --COFFEE-TAB-COLOR: hsl(30, 53%, 50%);
   --COFFEE-ITEM-COLOR: hsl(30, 53%, 70%);
   --COFFEE-CARD-COLOR: hsl(30, 53%, 90%);
@@ -69,7 +70,7 @@ img {
 }
 /* UTILITY CLASSES END HERE */
 
-/* ////////////////////////HOMEPAGE STYLE STARTS////////////////////////*/
+/* HOMEPAGE STYLES */
 .home-body {
   display: grid;
   place-items: center;
@@ -120,9 +121,8 @@ img {
   justify-content: center;
   width: 100%;
 }
-/* ////////////////////////HOMEPAGE STYLE ENDS//////////////////////// */
 
-/* ////////////////////////MENU PAGE STYLE STARTS//////////////////////// */
+/* MENU PAGE STYLES */
 html {
   scroll-behavior: smooth;
 }
@@ -284,4 +284,4 @@ details[open] > summary::before {
 details {
   -webkit-tap-highlight-color: hsl(0, 0%, 40%, 0.5);
 }
-/* ////////////////////////MENU PAGE STYLE ENDS//////////////////////// */
+
